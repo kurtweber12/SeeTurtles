@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 2d056ac30ecc9e542b26e06133f23602, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -149,7 +149,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2040418128}
     m_Modifications:
     - target: {fileID: 100000, guid: a721d859a66839b4f83428ae0f731f11, type: 3}
       propertyPath: m_Name
@@ -181,15 +181,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a721d859a66839b4f83428ae0f731f11, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 74
+      value: -181.28387
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a721d859a66839b4f83428ae0f731f11, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.040000916
+      value: 53.16702
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a721d859a66839b4f83428ae0f731f11, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.5
+      value: -62.00106
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a721d859a66839b4f83428ae0f731f11, type: 3}
       propertyPath: m_LocalRotation.w
@@ -216,6 +216,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a721d859a66839b4f83428ae0f731f11, type: 3}
+--- !u!4 &188111065 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: a721d859a66839b4f83428ae0f731f11, type: 3}
+  m_PrefabInstance: {fileID: 188111064}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &456660129
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,11 +513,11 @@ Transform:
   m_GameObject: {fileID: 1752376040}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -255.28387, y: 53.127018, z: -79.50106}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2040418128}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!154 &1752376042
 TerrainCollider:
@@ -612,7 +617,9 @@ Transform:
   m_LocalPosition: {x: 255.28387, y: -53.127018, z: 79.50106}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 188111065}
+  - {fileID: 1752376041}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &592334875621958003
@@ -1039,6 +1046,4 @@ SceneRoots:
   - {fileID: 1056891131}
   - {fileID: 2040418128}
   - {fileID: 1733550443}
-  - {fileID: 1752376041}
-  - {fileID: 188111064}
   - {fileID: 456660133}
