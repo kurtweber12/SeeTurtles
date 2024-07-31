@@ -2,8 +2,12 @@ using UnityEngine;
 
 public class ISInteractionHandler : MonoBehaviour
 {
-    public AudioClip audioClip; 
+    public AudioClip audioClip;
+    public string interactionId; // Unique ID for this interaction
     private bool isPlayerInRange = false;
+
+    // Reference to the marker
+    public GameObject marker;
 
     void Update()
     {
@@ -34,6 +38,12 @@ public class ISInteractionHandler : MonoBehaviour
         if (audioClip != null)
         {
             AudioController.Instance.PlayAudio(audioClip);
+            InteractionManager.Instance.CompleteInteraction(interactionId);
+            // Deactivate the marker
+            if (marker != null)
+            {
+                marker.SetActive(false);
+            }
         }
     }
 }

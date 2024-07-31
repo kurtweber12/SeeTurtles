@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransitionHandler : MonoBehaviour
 {
-    public string sceneName; 
+    public string sceneName;
     private bool isPlayerInRange = false;
 
     void Update()
