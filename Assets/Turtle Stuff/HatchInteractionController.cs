@@ -1,10 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HatchInteractionController : MonoBehaviour
 {
     private bool playerInRange;
+
+    public GameObject hatchingMarker; // Reference to the hatching marker
 
     void OnTriggerEnter(Collider other)
     {
@@ -28,6 +28,11 @@ public class HatchInteractionController : MonoBehaviour
         {
             // Trigger the hatching process
             FindObjectOfType<TurtleHatchingController>().StartHatching();
+            // Deactivate the hatching marker
+            if (hatchingMarker != null)
+            {
+                hatchingMarker.SetActive(false);
+            }
         }
     }
 }

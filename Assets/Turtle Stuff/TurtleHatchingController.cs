@@ -5,6 +5,7 @@ public class TurtleHatchingController : MonoBehaviour
     public GameObject unhatchedEggs;
     public GameObject hatchedEggs;
     public GameObject[] turtles;
+    public GameObject sceneTransitionMarker; // Reference to the scene transition marker
 
     public void StartHatching()
     {
@@ -17,6 +18,12 @@ public class TurtleHatchingController : MonoBehaviour
         {
             turtle.SetActive(true);
             turtle.GetComponent<TurtleController>().StartWalking();
+        }
+
+        // Activate the scene transition marker
+        if (sceneTransitionMarker != null)
+        {
+            sceneTransitionMarker.SetActive(true);
         }
     }
 }
