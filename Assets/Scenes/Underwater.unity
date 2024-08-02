@@ -2862,7 +2862,7 @@ Transform:
   m_Children:
   - {fileID: 879320832}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -313.5362, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -208.508, z: 0}
 --- !u!111 &369689996
 Animation:
   m_ObjectHideFlags: 0
