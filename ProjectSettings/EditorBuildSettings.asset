@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Underwater.unity
     guid: f1abd54bdb573254799eeef39857399f
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 34a12fa36c8424341b7031d3267886a9
+  - enabled: 1
+    path: Assets/Scenes/Relax.unity
+    guid: e422f268634174f4b9350d01226e7f4e
   m_configObjects: {}
